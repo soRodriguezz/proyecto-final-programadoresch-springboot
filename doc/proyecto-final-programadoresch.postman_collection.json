@@ -1,0 +1,681 @@
+{
+	"info": {
+		"_postman_id": "af3bb30b-18f2-4304-bc7d-a9a8385accd6",
+		"name": "API MI PERFIL",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "15642747"
+	},
+	"item": [
+		{
+			"name": "Perfil",
+			"item": [
+				{
+					"name": "/api/v1/perfil/save",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"acercaDe\": \"Soy desarrollador web\",\r\n    \"nombre\": \"Sebastian\",\r\n    \"apellido\": \"Rodriguez\",\r\n    \"edad\": 26\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:9000/api/v1/perfil/save",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"api",
+								"v1",
+								"perfil",
+								"save"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/api/v1/perfil/update/{id}",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"acercaDe\": \"Soy desarrollador web\",\r\n    \"nombre\": \"Albert\",\r\n    \"apellido\": \"Einstein\",\r\n    \"edad\": 26\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:9000/api/v1/perfil/update/1",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"api",
+								"v1",
+								"perfil",
+								"update",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/api/v1/perfil/delete/{id}",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:9000/api/v1/perfil/delete/1",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"api",
+								"v1",
+								"perfil",
+								"delete",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/api/v1/perfil/all",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:9000/api/v1/perfil/all",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"api",
+								"v1",
+								"perfil",
+								"all"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/api/v1/perfil/{id}",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:9000/api/v1/perfil/1",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"api",
+								"v1",
+								"perfil",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Conocimiento",
+			"item": [
+				{
+					"name": "/api/v1/conocimiento/save",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"aptitud\": \"aptitud13\",\r\n    \"idPerfil\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:9000/api/v1/conocimiento/save",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"api",
+								"v1",
+								"conocimiento",
+								"save"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/api/v1/conocimiento/all",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:9000/api/v1/conocimiento/all",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"api",
+								"v1",
+								"conocimiento",
+								"all"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/api/v1/conocimiento/{id}",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:9000/api/v1/conocimiento/1",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"api",
+								"v1",
+								"conocimiento",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/api/v1/conocimiento/update/{id}",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"aptitud\": \"angular\",\r\n    \"idPerfil\": 3\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:9000/api/v1/conocimiento/update/3",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"api",
+								"v1",
+								"conocimiento",
+								"update",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/api/v1/conocimiento/delete/{id}",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:9000/api/v1/conocimiento/delete/1",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"api",
+								"v1",
+								"conocimiento",
+								"delete",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Educacion",
+			"item": [
+				{
+					"name": "/api/v1/educacion/all",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:9000/api/v1/educacion/all",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"api",
+								"v1",
+								"educacion",
+								"all"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/api/v1/educacion/save",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"institucion\": \"institucion\",\r\n    \"mesInicio\": 6,\r\n    \"annoInicio\": 2021,\r\n    \"mesFin\": 9,\r\n    \"annoFin\": 2022,\r\n    \"idPerfil\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:9000/api/v1/educacion/save",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"api",
+								"v1",
+								"educacion",
+								"save"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/api/v1/educacion/{id}",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:9000/api/v1/educacion/1",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"api",
+								"v1",
+								"educacion",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/api/v1/educacion/update/{id}",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"institucion\": \"institucion34\",\r\n    \"mesInicio\": 6,\r\n    \"annoInicio\": 2021,\r\n    \"mesFin\": 9,\r\n    \"annoFin\": 2022,\r\n    \"idPerfil\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:9000/api/v1/educacion/update/1",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"api",
+								"v1",
+								"educacion",
+								"update",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/api/v1/educacion/delete/{id}",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:9000/api/v1/educacion/delete/2",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"api",
+								"v1",
+								"educacion",
+								"delete",
+								"2"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Experiencia",
+			"item": [
+				{
+					"name": "/api/v1/experiencia/all",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:9000/api/v1/experiencia/all",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"api",
+								"v1",
+								"experiencia",
+								"all"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/api/v1/experiencia/save",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"cargo\": \"institucion\",\r\n    \"nombreEmpresa\": \"Desarrollador backend\",\r\n    \"ubicacion\": \"Santiago, Chile\",\r\n    \"mesInicio\": 5,\r\n    \"annoInicio\": 2021,\r\n    \"mesFin\": 9,\r\n    \"annoFin\": 2022,\r\n    \"idPerfil\": 3\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:9000/api/v1/experiencia/save",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"api",
+								"v1",
+								"experiencia",
+								"save"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/api/v1/experiencia/{id}",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:9000/api/v1/experiencia/1",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"api",
+								"v1",
+								"experiencia",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/api/v1/experiencia/delete/{id}",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:9000/api/v1/experiencia/delete/2",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"api",
+								"v1",
+								"experiencia",
+								"delete",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/api/v1/experiencia/update/{id}",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"cargo\": \"cargo123\",\r\n    \"nombreEmpresa\": \"Programadores Chile\",\r\n    \"ubicacion\": \"Santiago, Chile\",\r\n    \"mesInicio\": 5,\r\n    \"annoInicio\": 2021,\r\n    \"mesFin\": 9,\r\n    \"annoFin\": 2022,\r\n    \"idPerfil\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:9000/api/v1/experiencia/update/1",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"api",
+								"v1",
+								"experiencia",
+								"update",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "LicenciaCertificado",
+			"item": [
+				{
+					"name": "/api/v1/licencia-certificado/all",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:9000/api/v1/licencia-certificado/all",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"api",
+								"v1",
+								"licencia-certificado",
+								"all"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/api/v1/licencia-certificado/save",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nombreCertificado\": \"cerfificado\",\r\n    \"empresaEmisora\": \"otec\",\r\n    \"urlCertificado\": \"www.certificado.cl\",\r\n    \"mesInicio\": 5,\r\n    \"annoInicio\": 2021,\r\n    \"mesFin\": 9,\r\n    \"annoFin\": 2022,\r\n    \"idPerfil\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:9000/api/v1/licencia-certificado/save",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"api",
+								"v1",
+								"licencia-certificado",
+								"save"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/api/v1/licencia-certificado/{id}",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:9000/api/v1/licencia-certificado/1",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"api",
+								"v1",
+								"licencia-certificado",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/api/v1/licencia-certificado/update/{id}",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nombreCertificado\": \"cerfificado123\",\r\n    \"empresaEmisora\": \"otec123\",\r\n    \"urlCertificado\": \"www.certificado.co\",\r\n    \"mesInicio\": 5,\r\n    \"annoInicio\": 2021,\r\n    \"mesFin\": 9,\r\n    \"annoFin\": 2022,\r\n    \"idPerfil\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:9000/api/v1/licencia-certificado/update/1",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"api",
+								"v1",
+								"licencia-certificado",
+								"update",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/api/v1/licencia-certificado/delete/{id}",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:9000/api/v1/licencia-certificado/delete/2",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"api",
+								"v1",
+								"licencia-certificado",
+								"delete",
+								"2"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "/api/v1/curriculum/{idPerfil}",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:9000/api/v1/curriculum/1",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"api",
+						"v1",
+						"curriculum",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
