@@ -8,9 +8,7 @@ import com.programadoresch.perfilusuario.application.ports.output.conocimiento.C
 import com.programadoresch.perfilusuario.application.ports.output.perfil.PerfilGateway;
 import com.programadoresch.perfilusuario.infrastructure.dto.RequestConocimientoDTO;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Service;
-import org.springframework.web.server.ResponseStatusException;
 
 @Service
 public class SaveConocimientoService implements SaveConocimientoUseCase {
